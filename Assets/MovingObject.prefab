@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1110844288720410992, guid: 9122cb3524a07104a96df28286e8faae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e5832492b060c340a4b8fcb428a0f1c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9122cb3524a07104a96df28286e8faae, type: 3}
 --- !u!1 &3730889883222333389 stripped
@@ -62,19 +66,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 336500839244942763, guid: 9122cb3524a07104a96df28286e8faae, type: 3}
   m_PrefabInstance: {fileID: 3994047654060366438}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &307965196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3730889883222333389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e54b329f454d9664f9ac132f5911d684, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DropTime: 5
 --- !u!54 &2696814298118196159
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -91,3 +82,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &307965196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3730889883222333389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54b329f454d9664f9ac132f5911d684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropTime: 5

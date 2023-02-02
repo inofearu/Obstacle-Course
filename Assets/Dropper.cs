@@ -5,16 +5,16 @@ using UnityEngine;
 public class Dropper : MonoBehaviour
 {
     [SerializeField] float dropTime = 5f;
-    MeshRenderer renderer;
-    Rigidbody rigidbody;
+    MeshRenderer rend;
+    Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-        renderer = GetComponent<MeshRenderer>();
-        rigidbody = GetComponent<Rigidbody>();
+        rend = GetComponent<MeshRenderer>();
+        rb = GetComponent<Rigidbody>();
 
-        renderer.enabled = false;
-        rigidbody.useGravity = false;
+        rend.enabled = false;
+        rb.useGravity = false;
     }
 
     // Update is called once per frame
@@ -22,8 +22,8 @@ public class Dropper : MonoBehaviour
     {
        if(Time.time > dropTime)
        {
-        renderer.enabled = true;
-        rigidbody.useGravity = true;
+        rend.enabled = true;
+        rb.useGravity = true;
        }
     }
 }

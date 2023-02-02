@@ -7,7 +7,7 @@ public class Scorer : MonoBehaviour
     int collisionCount = 0;
     private void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.tag != "Hit")
+        if(other.gameObject.tag != "Hit" && other.gameObject.tag != "doNotCount")
         {
             collisionCount ++;
             Debug.Log("You have bumped into an object " + collisionCount + " number of times");
