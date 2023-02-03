@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2340856720777416710, guid: 19d24effa7f22e14b8be74ad3553c660, type: 3}
+      propertyPath: dropTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340856720777416710, guid: 19d24effa7f22e14b8be74ad3553c660, type: 3}
+      propertyPath: automaticDupliTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340856720777416710, guid: 19d24effa7f22e14b8be74ad3553c660, type: 3}
+      propertyPath: automaticDupliLimit
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4771207752032577252, guid: 19d24effa7f22e14b8be74ad3553c660, type: 3}
       propertyPath: m_Name
       value: Roller
@@ -178,7 +190,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5101246622752843538, guid: 19d24effa7f22e14b8be74ad3553c660, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 19d24effa7f22e14b8be74ad3553c660, type: 3}
 --- !u!1 &273682369
 GameObject:

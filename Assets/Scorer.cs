@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Scorer : MonoBehaviour
 {
-    int collisionCount = 0;
+    private int collisionCount = 0;
     private void OnCollisionEnter(Collision other) 
     {
-        if(other.gameObject.tag != "Hit" && other.gameObject.tag != "doNotCount")
+        if(other.gameObject.CompareTag("Hit") is false && other.gameObject.CompareTag("doNotCount") is false)
         {
             collisionCount ++;
             Debug.Log("You have bumped into an object " + collisionCount + " number of times");
